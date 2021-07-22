@@ -1,15 +1,12 @@
 import GlobalStyle from './Styles/global'
-
-import Layout from './Components/Layout'
+import Routes from './Routes/app.routes'
 
 function App() {
   return (
-    <Layout>
+    <>
       <GlobalStyle />
-
-      <div>Content teste</div>
-      
-    </Layout>
+      <Routes />
+    </>
   );
 }
 
