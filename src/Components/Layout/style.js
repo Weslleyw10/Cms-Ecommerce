@@ -4,10 +4,10 @@ export const Grid = styled.div `
     min-width: 315px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 200px auto;
     grid-template-rows: 70px auto;
     grid-template-areas:
-    'AS MH'
+    'MH MH'
     'AS CT';
 
     /* @media(max-width: 600px) {

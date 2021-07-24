@@ -18,7 +18,7 @@ const CreateProduct = () => {
     listProducts = localStorage.getItem('@weslleylsilva/listProducts') 
         ? JSON.parse(localStorage.getItem('@weslleylsilva/listProducts')) : []
 
-    // console.log('listProducts', listProducts)
+    // console.log('listProducts', listProducts.length)
 
     const setProductHandle = (key, value) => {
         setProduct({
@@ -29,7 +29,10 @@ const CreateProduct = () => {
 
     const addProductHandle = (e) => {
         e.preventDefault()
-        listProducts.push(product)
+        listProducts.push({
+            id: new Date().getTime().toString(),
+            ...product
+        })
         localStorage.setItem('@weslleylsilva/listProducts', JSON.stringify(listProducts))
         setProduct(INITIAL_STATE)
     }

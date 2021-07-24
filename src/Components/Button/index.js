@@ -1,9 +1,9 @@
 import { Button as ButtonComponent } from './style'
 
-const Button = ({ children }) => {
+const Button = ({children, ...props }) => {
     return (
-        <ButtonComponent>
-            { children }
+        <ButtonComponent {...props}>
+            {children}
         </ButtonComponent>
     )
 }

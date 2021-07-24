@@ -16,7 +16,7 @@ const listCustomer = () => {
         <Container>
             <HeaderPage>
                 <h1>Clientes</h1>
-                <Link to="/customer/create">
+                <Link to="/customer/create" background="#0AAA5D">
                     Novo Cliente
                 </Link>
             </HeaderPage>
@@ -33,18 +33,12 @@ const listCustomer = () => {
                                 { label: 'Telefone', key: 'phone', width: 200 },
                                 { label: 'CPF', key: 'document', width: 200 },
                             ]}
-                            // actions={(customer) => (
-                            //   <Button color="blue" size="xs">
-                            //     Ver
-                            //   </Button>
-                            // )}
                             onRowClick={(customer) => console.log(customer)}
                         />
                     ) : (
                         <h1>Você ainda não tem clientes cadastrados :(</h1>
                     )
                 }
-
 
             </Content>
         </Container >

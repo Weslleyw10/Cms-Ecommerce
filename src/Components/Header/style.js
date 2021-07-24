@@ -14,3 +14,9 @@ export const Container = styled.div`
         flex-direction: column;
     } */
 `;
+
+export const Logo = styled.img`
+    width: 150px;
+    
+    /* height: 150px; */
+`;

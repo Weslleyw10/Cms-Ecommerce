@@ -35,7 +35,7 @@ export const MenuItem = styled(Link).attrs({})`
         margin-right: .3rem;
     }
 
-    :hover {
+    :hover, :focus {
         background: #CCC;
         transition: .3s;
         text-decoration: none;
