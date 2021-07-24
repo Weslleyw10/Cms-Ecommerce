@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    grid-area: MH;
-    width: 100%;
+    padding: 2rem 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 
-    background: #dddddd;
-
-    /* @media(max-width: 375px) {
-        flex-direction: column;
-    } */
+    > h1 {
+        font-weight: bold;
+    }    
 `;
+
+
+

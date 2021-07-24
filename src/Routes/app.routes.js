@@ -1,8 +1,9 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 
-import listCustomer from '../Pages/Customer/List'
-import createCustomer from '../Pages/Customer/Create'
-import Stock from '../Pages/Stock'
+import ListCustomer from '../Pages/Customer/List'
+import CreateCustomer from '../Pages/Customer/Create'
+import ListProducts from '../Pages/Stock/List'
+import CreateProducts from '../Pages/Stock/Create'
 
 import Layout from '../Components/Layout'
 
@@ -10,9 +11,10 @@ const appRoutes = () => (
     <BrowserRouter>
         <Switch>
             <Layout>
-                <Route path="/" exact component={listCustomer} />
-                <Route path="/customer/create" component={createCustomer} />
-                <Route path="/stock" component={Stock} />
+                <Route path="/" exact component={ListCustomer} />
+                <Route path="/customer/create" component={CreateCustomer} />
+                <Route path="/products" exact component={ListProducts} />
+                <Route path="/products/create" component={CreateProducts} />
             </Layout>
         </Switch>
     </BrowserRouter>

@@ -1,14 +1,13 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 
 export const Container = styled.div`
     grid-area: AS;
-    background: #666;
+    background: #eeeeee;
     padding: 1rem;
     
 `;
-
 
 export const Logo = styled.div`
     width: 80%;
@@ -37,8 +36,10 @@ export const MenuItem = styled(Link).attrs({})`
     }
 
     :hover {
-        background: #888;
+        background: #CCC;
         transition: .3s;
+        text-decoration: none;
+        color: #333;
         
     }
 

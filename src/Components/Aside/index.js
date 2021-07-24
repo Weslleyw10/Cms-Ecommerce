@@ -3,8 +3,6 @@ import { Container, Logo, MenuContainer, MenuItem } from './style'
 import { BsFillPeopleFill } from 'react-icons/bs'
 import { AiOutlineStock } from 'react-icons/ai'
 
-import { Link } from 'react-router-dom'
-
 const Aside = () => {
     return (
         <Container>
@@ -18,7 +16,7 @@ const Aside = () => {
                     Clientes                
                 </MenuItem>
 
-                <MenuItem to="/stock">
+                <MenuItem to="/products">
                     <AiOutlineStock />
                     Estoque                
                 </MenuItem>

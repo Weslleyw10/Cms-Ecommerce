@@ -7,17 +7,16 @@ import HeaderPage from '../../../Components/HeaderPage'
 import Link from '../../../Components/Link'
 import Table from '../../../Components/Table'
 
-const listCustomer = () => {
-
-    const customers = localStorage.getItem('@weslleylsilva/listcustomer') ?
-        JSON.parse(localStorage.getItem('@weslleylsilva/listcustomer')) : false
+const Stock = () => {
+    const customers = localStorage.getItem('@weslleylsilva/listProducts') ?
+        JSON.parse(localStorage.getItem('@weslleylsilva/listProducts')) : false
 
     return (
         <Container>
             <HeaderPage>
-                <h1>Clientes</h1>
-                <Link to="/customer/create">
-                    Novo Cliente
+                <h1>Estoque</h1>
+                <Link to="/products/create">
+                    Novo Produto
                 </Link>
             </HeaderPage>
 
@@ -29,9 +28,9 @@ const listCustomer = () => {
                             data={customers}
                             config={[
                                 { label: 'Nome', key: 'name', width: 200, fixed: true },
-                                { label: 'Email', key: 'email', width: 200 },
-                                { label: 'Telefone', key: 'phone', width: 200 },
-                                { label: 'CPF', key: 'document', width: 200 },
+                                { label: 'Marca', key: 'brand', width: 200 },
+                                { label: 'Preço', key: 'price', width: 200 },
+                                { label: 'Estoque', key: 'stock', width: 200 },
                             ]}
                             // actions={(customer) => (
                             //   <Button color="blue" size="xs">
@@ -41,14 +40,12 @@ const listCustomer = () => {
                             onRowClick={(customer) => console.log(customer)}
                         />
                     ) : (
-                        <h1>Você ainda não tem clientes cadastrados :(</h1>
+                        <h1>Você ainda não tem produtos cadastrados :(</h1>
                     )
                 }
-
-
             </Content>
         </Container >
     )
 }
 
-export default listCustomer
+export default Stock

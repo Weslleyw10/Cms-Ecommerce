@@ -17,9 +17,8 @@ export const Content = styled.div`
         box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
 
         @media(max-width: 1100px) {
-        width: 90%;
-
-    }
+            width: 90%;
+        }
     }
 
     .input {
