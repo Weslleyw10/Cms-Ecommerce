@@ -52,7 +52,6 @@ const Stock = () => {
 
     return (
         <Container>
-
             <Drawer
                 show={drawer}
                 size="sm"
